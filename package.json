@@ -1,0 +1,28 @@
+{
+  "name": "adaptive-ai-layer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Contract-based LLM adaptation engine for an adaptive course. Section 3: Adaptive AI layer.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --exclude '**/*.eval.test.ts'",
+    "test:watch": "vitest --exclude '**/*.eval.test.ts'",
+    "eval": "vitest run src/eval",
+    "demo": "tsx src/demo.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.117.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
